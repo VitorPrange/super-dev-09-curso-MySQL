@@ -77,7 +77,7 @@ CREATE TABLE pratos_feitos(
 
 CREATE TABLE pedidos(
     id int PRIMARY KEY AUTO_INCREMENT,
-    nome int,
+    nome VARCHAR(100),
     documento VARCHAR(100),
     telefone VARCHAR(100)
 );
@@ -89,3 +89,39 @@ CREATE TABLE bebidas(
     tipo VARCHAR(100),
     preco DECIMAL(10,2)
 );
+
+
+INSERT INTO mesas (numero_mesa, lugares) VALUES ("002", 12);
+INSERT INTO mesas (numero_mesa, lugares) VALUES ("003", 4);
+INSERT INTO mesas (numero_mesa, lugares) VALUES ("004", 8);
+INSERT INTO mesas (numero_mesa, lugares) VALUES ("005", 5);
+INSERT INTO mesas (numero_mesa, lugares) VALUES ("006", 9);
+INSERT INTO mesas (numero_mesa, lugares) VALUES ("007", 5);
+INSERT INTO mesas (numero_mesa, lugares) VALUES ("008", 3);
+INSERT INTO mesas (numero_mesa, lugares) VALUES ("009", 2);
+INSERT INTO mesas (numero_mesa, lugares) VALUES ("010", 1);
+INSERT INTO mesas (numero_mesa, lugares) VALUES ("001", 7);
+
+
+INSERT INTO pratos_feitos (nome, custo) VALUES ("X-Calabresa sem carne", 60.90);
+INSERT INTO pratos_feitos (nome, custo) VALUES ("Pizza de Calabresa de 10cm", 25.00);
+INSERT INTO pratos_feitos (nome, custo) VALUES ("Folhado de Calabresa", 17.28);
+INSERT INTO pratos_feitos (nome, custo) VALUES ("Kalzone de Calabresa", 86.45);
+INSERT INTO pratos_feitos (nome, custo) VALUES ("Calabresa Cheddar e Batata Frita", 9.75);
+INSERT INTO pratos_feitos (nome, custo) VALUES ("Calabresa no Pão de queijo", 133.35);
+INSERT INTO pratos_feitos (nome, custo) VALUES ("Pirão banco com calabresa e ovo", 17.55);
+INSERT INTO pratos_feitos (nome, custo) VALUES ("Pão de alho e calabresa", 67.77);
+INSERT INTO pratos_feitos (nome, custo) VALUES ("Sopa de cala com lingua de boi", 100.60);
+INSERT INTO pratos_feitos (nome, custo) VALUES ("Fondue de Chocolate", 823.40);
+
+
+INSERT INTO pedidos (nome, documento, telefone) VALUES ("Luquita da galera", "24.740.464/0001-00", "(96) 3741-5005");
+INSERT INTO pedidos (nome, documento, telefone) VALUES ("Leandro Antonio Melo", "834.931.626-85", "(71) 2929-9455");
+INSERT INTO pedidos (nome, documento, telefone) VALUES ("Isis Rebeca Vanessa Sales", "936.423.500-20", "(11) 98693-3252");
+
+
+INSERT INTO bebidas (nome, tipo, preco) VALUES ("Laranjinha", "Refrigerante", 18.00);
+INSERT INTO bebidas (nome, tipo, preco) VALUES ("Fruki", "Refrigerante", 10.00);
+INSERT INTO bebidas (nome, tipo, preco) VALUES ("Corote", "Vodka", 27.00);
+INSERT INTO bebidas (nome, tipo, preco) VALUES ("Vinho Campo Largo 750ml", "Vinho", 74.43);
+INSERT INTO bebidas (nome, tipo, preco) VALUES ("Del Valle 100% Laranja 1L", "Suco", 66.50);
