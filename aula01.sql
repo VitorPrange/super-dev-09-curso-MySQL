@@ -62,21 +62,21 @@ SELECT id, nome, cargo, data_nascimento, salario FROM funcionarios;
 
 
 CREATE TABLE mesas(
-    id int PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     numero_mesa VARCHAR(100),
-    lugares int
+    lugares INT
 );
 
 
 CREATE TABLE pratos_feitos(
-    id int PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
     custo DECIMAL(10,2)
 );
 
 
 CREATE TABLE pedidos(
-    id int PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
     documento VARCHAR(100),
     telefone VARCHAR(100)
@@ -84,7 +84,7 @@ CREATE TABLE pedidos(
 
 
 CREATE TABLE bebidas(
-    id int PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
     tipo VARCHAR(100),
     preco DECIMAL(10,2)
